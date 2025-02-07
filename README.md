@@ -22,7 +22,7 @@ Este √© um jogo de RPG baseado em turnos desenvolvido em Java, inspirado em mec√
    ```
 4. Execute o jogo:
    ```sh
-   java -cp bin Principal
+   java -cp bin Main
    ```
 
 ## Estrutura do Projeto
