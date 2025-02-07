@@ -37,6 +37,3 @@ JogoRPG/
 
 ## Contribuição
 Sinta-se à vontade para contribuir com melhorias, reportar bugs ou sugerir novas funcionalidades.
-
-## Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
