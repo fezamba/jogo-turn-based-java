@@ -30,8 +30,10 @@ Este é um jogo de RPG baseado em turnos desenvolvido em Java, inspirado em mec�
 JogoRPG/
 ├── src/              # Código-fonte do jogo
 │   ├── Personagens/  # Classes dos personagens
-│   ├── Principal/    # Função Main + Interface gráfica (futuro aprimoramento)
 │   ├── Viloes/       # Classes dos viloes
+│   ├── Main.java     # Função principal
+│   ├── GameUI.java   # UI do jogo (futuro aprimoramento)
+│   ├── BattleUI.java # UI de batalha (futuro aprimoramento)
 ├── README.md         # Documentação do projeto
 ```
 
