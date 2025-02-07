@@ -6,8 +6,8 @@ public class Golem extends BossBase implements Boss {
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Forjado nas profundezas das Montanhas Obsidianas, o Golem de Pedra é uma antiga criação mágica de Omnis. Originalmente um guardião leal, ele foi corrompido pela energia das trevas que invadiu o mundo após a queda de seu criador. Imponente e implacável, o Golem guarda o Vale Rochoso, um local crucial para os heróis continuarem sua jornada. Suas investidas são capazes de esmagar até os mais poderosos guerreiros, e apenas aqueles que demonstrarem força bruta poderão derrotá-lo.\n");
+    public String contarHistoria() {
+        return "Forjado nas profundezas das Montanhas Obsidianas, o Golem de Pedra é uma antiga criação mágica de Omnis. \nOriginalmente um guardião leal, ele foi corrompido pela energia das trevas que invadiu o mundo após a queda de seu criador. Imponente e implacável, o Golem guarda o Vale Rochoso, um local crucial para os heróis continuarem sua jornada. \nSuas investidas são capazes de esmagar até os mais poderosos guerreiros, e apenas aqueles que demonstrarem força bruta poderão derrotá-lo.\n";
     }
 
     @Override

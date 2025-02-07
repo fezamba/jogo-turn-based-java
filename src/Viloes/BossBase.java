@@ -53,9 +53,7 @@ public abstract class BossBase implements Boss {
         System.out.println(nome + " recebeu " + danoFinal + " de dano! Vida atual: " + hp + "/" + hpMax);
     }
 
-    public void exibirInfo() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Vida: " + hp + "/" + hpMax);
-        System.out.println("Ataque: " + atk);
+    public String exibirInfo() {
+        return "Uma temível criatura surge, seu nome é " + nome + ". Vida atual: " + hp + "/" + hpMax;
     }
 }

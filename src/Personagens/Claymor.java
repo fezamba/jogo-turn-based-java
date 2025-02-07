@@ -1,14 +1,13 @@
 package Personagens;
 public class Claymor extends PersonagemBase implements Personagem {
-    private double reduzirDano;
 
     public Claymor() {
-        super("Claymor", 600, 100, 300, 600, 300);
+        super("Claymor", 600, 100, 300, 600, 300, 300, 0, 1);
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Um cavaleiro veterano, mestre em defesa. Ele sobreviveu a batalhas impossíveis graças à sua resiliência inigualável. Sua missão é proteger os outros heróis a qualquer custo.\n");
+    public String contarHistoria() {
+        return "Um cavaleiro veterano, mestre em defesa. \nEle sobreviveu a batalhas impossíveis graças à sua resiliência inigualável. \nSua missão é proteger os outros heróis a qualquer custo.\n";
     }
 
     @Override
@@ -17,16 +16,16 @@ public class Claymor extends PersonagemBase implements Personagem {
     }
 
     @Override
-    public void utilizarPoderEspecial() {
-        int custoMana = 300;
+    public int utilizarPoderEspecial() {
+        setReduzirDano(2);
         if (mp >= custoMana){
             mp -= custoMana;
-            reduzirDano = 0.5;
             System.out.println(nome + " ativa um escudo mágico que reduz o do dano recebido!");
             System.out.println("Mana restante: " + mp);
         } else {
             System.out.println(nome + " não tem mana suficiente para ativar o escudo!");
         }
+        return reduzirDano;
     }
 
     @Override
@@ -70,8 +69,8 @@ public class Claymor extends PersonagemBase implements Personagem {
 
     @Override
     public void receberDano(int dano){
-        int danoFinal = (int)(dano * (1 - reduzirDano));
+        int danoFinal = (int) (dano * (1 / (double)reduzirDano));
         setHp(hp - danoFinal);
-        System.out.println(nome + " recebeu " + danoFinal + " de dano (redução de " + (reduzirDano * 100) + "%). Vida atual: " + hp + "/" + hpMax);
+        System.out.println(nome + " recebeu " + danoFinal + " de dano! Vida atual: " + hp + "/" + hpMax);
     }
 }

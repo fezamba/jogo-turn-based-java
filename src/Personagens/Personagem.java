@@ -1,11 +1,12 @@
 package Personagens;
 public interface Personagem {
 
-    void contarHistoria();
+    String exibirInfo();
     void utilizarPoder();
-    void utilizarPoderEspecial();
+    int utilizarPoderEspecial();
     void adicionarItem(Item item);
     void usarItem(int indice);
     void exibirInventario();
     void receberDano(int dano);
+    String contarHistoria();
 }

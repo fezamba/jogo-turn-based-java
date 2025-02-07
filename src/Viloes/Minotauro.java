@@ -5,8 +5,8 @@ public class Minotauro extends BossBase implements Boss {
         super("Minotauro de Creta", 1500, 40, 1500);
     }
     @Override
-    public void contarHistoria() {
-        System.out.println("No coração do Labirinto de Creta, vive o Minotauro, uma criação híbrida que combina força bruta e astúcia mortal. Durante a queda de Omnis, o Minotauro foi solto do labirinto mágico que o mantinha contido e agora caça qualquer ser que se atreva a desafiá-lo. Ele acumula armas e relíquias mágicas de suas vítimas, tornando-se ainda mais perigoso.\n");
+    public String contarHistoria() {
+        return "No coração do Labirinto de Creta, vive o Minotauro, uma criação híbrida que combina força bruta e astúcia mortal. \nDurante a queda de Omnis, o Minotauro foi solto do labirinto mágico que o mantinha contido e agora caça qualquer ser que se atreva a desafiá-lo. \nEle acumula armas e relíquias mágicas de suas vítimas, tornando-se ainda mais perigoso.\n";
     }
 
     @Override

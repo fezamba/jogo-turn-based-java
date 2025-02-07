@@ -1,12 +1,12 @@
 package Personagens;
 public class Aelira extends PersonagemBase implements Personagem {
     public Aelira() {
-        super("Aelira", 300, 200, 300, 300, 300);
+        super("Aelira", 300, 200, 300, 300, 300, 100, 0, 1);
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Uma maga do elemento ar, descendente de uma linhagem antiga de guardiões elementais. Ela busca honrar seu clã destruindo as forças do mal que ameaçam Eryndor.\n");
+    public String contarHistoria() {
+        return "Uma maga do elemento ar, descendente de uma linhagem antiga de guardiões elementais. \nEla busca honrar seu clã destruindo as forças do mal que ameaçam Eryndor.\n";
     }
 
     @Override
@@ -15,15 +15,15 @@ public class Aelira extends PersonagemBase implements Personagem {
     }
 
     @Override
-    public void utilizarPoderEspecial() {
-        int custoMana = 100;
+    public int utilizarPoderEspecial() {
+        int danoEspecial = 300;
         if (mp >= custoMana) {
             mp -= custoMana;
-            int danoEspecial = 300;
             System.out.println(nome + " usa um Tornado Arcano causando " + danoEspecial + " de dano!");
         } else {
             System.out.println(nome + " não tem mana suficiente para usar o Tornado Arcano!");
         }
+        return danoEspecial;
     }
 
     @Override

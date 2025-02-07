@@ -1,12 +1,12 @@
 package Personagens;
 public class Kaelion extends PersonagemBase implements Personagem {
     public Kaelion() {
-        super("Kaelion", 200, 300, 150, 200, 150);
+        super("Kaelion", 200, 300, 150, 200, 150, 100, 0, 1);
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Um guerreiro destemido treinado nas artes da espada do fogo. Sua determinação em proteger os inocentes é inabalável. Kaelion jurou proteger a Academia e vingar a queda de Omnis.\n");
+    public String contarHistoria() {
+        return "Um guerreiro destemido treinado nas artes da espada do fogo. \nSua determinação em proteger os inocentes é inabalável. \nKaelion jurou proteger a Academia e vingar a queda de Omnis.\n";
     }
 
     @Override
@@ -15,15 +15,15 @@ public class Kaelion extends PersonagemBase implements Personagem {
     }
 
     @Override
-    public void utilizarPoderEspecial() {
-        int custoMana = 100;
+    public int utilizarPoderEspecial() {
+        int danoEspecial = 450;
         if (mp >= custoMana) {
             mp -= custoMana;
-            int danoEspecial = 450;
             System.out.println(nome + " usa seu ataque de erupção solar causando " + danoEspecial + " de dano!");
         } else {
             System.out.println(nome + " não tem mana suficiente para usar a erupção solar!");
         }
+        return danoEspecial;
     }
 
     @Override

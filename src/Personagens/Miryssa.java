@@ -1,12 +1,12 @@
 package Personagens;
 public class Miryssa extends PersonagemBase implements Personagem {
     public Miryssa() {
-        super("Miryssa", 250, 150, 200, 250, 200);
+        super("Miryssa", 250, 150, 200, 250, 200, 100, 150, 1);
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Uma jovem curandeira da aldeia de Estínfalo, conhecida por sua conexão com a magia da água. Miryssa viu sua vila ser destruída pelos monstros mágicos e prometeu lutar para evitar que outros sofressem o mesmo destino.\n");
+    public String contarHistoria() {
+        return "Uma jovem curandeira da aldeia de Estínfalo, conhecida por sua conexão com a magia da água. \nMiryssa viu sua vila ser destruída pelos monstros mágicos e prometeu lutar para evitar que outros sofressem o mesmo destino.\n";
     }
 
     @Override
@@ -15,17 +15,17 @@ public class Miryssa extends PersonagemBase implements Personagem {
     }
 
     @Override
-    public void utilizarPoderEspecial() {
-        int custoMana = 100;
+    public int utilizarPoderEspecial() {
+        int cura = 150;
         if (mp >= custoMana) {
             mp -= custoMana;
-            int cura = 150;
             setHp(hp + cura);
             System.out.println(nome + " usa um Efeito de Cura e recupera " + cura + " HP!");
             System.out.println("Mana restante: " + mp);
         } else {
             System.out.println(nome + "não tem mana suficiente para usar o Efeito de Cura!");
         }
+        return cura;
     }
 
     @Override

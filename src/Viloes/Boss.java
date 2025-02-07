@@ -1,7 +1,7 @@
 package Viloes;
 
 public interface Boss {
-    void contarHistoria();
+    String contarHistoria();
     void utilizarPoder();
     void receberDano(int dano);
 }

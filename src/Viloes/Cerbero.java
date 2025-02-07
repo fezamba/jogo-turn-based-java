@@ -6,8 +6,8 @@ public class Cerbero extends BossBase implements Boss {
     }
 
     @Override
-    public void contarHistoria() {
-        System.out.println("Na entrada do Reino dos Mortos, o Cérbero, guardião de Hades, protege o portão que conecta o mundo dos vivos ao dos mortos. Com três cabeças e um temperamento infernal, ele foi corrompido pelas trevas e agora ameaça não apenas o reino, mas o equilíbrio entre vida e morte. Seu uivo é capaz de quebrar a coragem dos mais valentes.\n");
+    public String contarHistoria() {
+       return "Na entrada do Reino dos Mortos, o Cérbero, guardião de Hades, protege o portão que conecta o mundo dos vivos ao dos mortos. \nCom três cabeças e um temperamento infernal, ele foi corrompido pelas trevas e agora ameaça não apenas o reino, mas o equilíbrio entre vida e morte.\n Seu uivo é capaz de quebrar a coragem dos mais valentes.\n";
     }
 
     @Override

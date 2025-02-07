@@ -9,8 +9,10 @@ public abstract class PersonagemBase implements Personagem{
     protected int hpMax;
     protected int mpMax;
     protected ArrayList<Item> inventario;
-
-    public PersonagemBase(String nome, int hp, int atk, int mp, int hpMax, int mpMax) {
+    protected int custoMana;
+    protected int cura;
+    protected int reduzirDano;
+    public PersonagemBase(String nome, int hp, int atk, int mp, int hpMax, int mpMax, int custoMana, int cura, int reduzirDano) {
         this.nome = nome;
         this.hp = hp;
         this.atk = atk;
@@ -18,6 +20,9 @@ public abstract class PersonagemBase implements Personagem{
         this.hpMax = hpMax;
         this.mpMax = mpMax;
         this.inventario = new ArrayList<>();
+        this.custoMana = custoMana;
+        this.cura = cura;
+        this.reduzirDano = reduzirDano;
     }
 
     public String getNome() {
@@ -68,9 +73,21 @@ public abstract class PersonagemBase implements Personagem{
         this.mpMax = mpMax;
     }
 
-    public List<Item> getInventario(){
-        return new ArrayList<>(inventario);
-    }
+    public List<Item> getInventario(){return new ArrayList<>(inventario);}
+
+    public int getCustoMana() {return custoMana;}
+
+    public void setCustoMana(int custoMana) {this.custoMana = custoMana;}
+
+    public int getCura() {return cura;}
+
+    public void setCura(int cura) {this.cura = cura;}
+
+    public int getReduzirDano() {return reduzirDano;}
+
+    public void setReduzirDano(int reduzirDano) {this.reduzirDano = reduzirDano;}
+
+
 
     public void receberDano(int dano){
         int danoFinal = Math.max(0, dano);
@@ -78,11 +95,8 @@ public abstract class PersonagemBase implements Personagem{
         System.out.println(nome + " recebeu " + danoFinal + " de dano! Vida atual: " + hp + "/" + hpMax);
     }
 
-    public void exibirInfo() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Vida: " + hp + "/" + hpMax);
-        System.out.println("Mana: " + mp + "/" + mpMax);
-        System.out.println("Ataque: " + atk);
+    public String exibirInfo() {
+        return "Ataque: " + atk + "/ Mana: " + mp + "/ Vida: " + hpMax;
     }
 }
 

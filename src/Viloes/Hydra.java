@@ -5,8 +5,8 @@ public class Hydra extends BossBase implements Boss {
         super("Hydra de Lerna", 3000, 60, 3000);
     }
     @Override
-    public void contarHistoria() {
-        System.out.println("A Hidra de Lerna, uma fera lendária que habita as profundezas de um pântano envenenado, foi despertada pelas forças sombrias. Com várias cabeças que regeneram sempre que uma é cortada, ela representa um desafio quase impossível. Apenas o mais habilidoso e determinado dos heróis pode enfrentá-la sem sucumbir. A Hidra guarda o Nexus da Magia, a última esperança para restaurar o equilíbrio de Eryndor.\n");
+    public String contarHistoria() {
+        return "A Hidra de Lerna, uma fera lendária que habita as profundezas de um pântano envenenado, foi despertada pelas forças sombrias. \nCom várias cabeças que regeneram sempre que uma é cortada, ela representa um desafio quase impossível. \nApenas o mais habilidoso e determinado dos heróis pode enfrentá-la sem sucumbir. \nA Hidra guarda o Nexus da Magia, a última esperança para restaurar o equilíbrio de Eryndor.\n";
     }
 
     @Override
