@@ -10,32 +10,5 @@ Este é um jogo de RPG baseado em turnos desenvolvido em Java, inspirado em mec�
 - Sistema de buffs após derrotar chefes.
 - Interface gráfica utilizando Java Swing (futuro aprimoramento).
 
-## Como Executar
-1. Certifique-se de ter o Java instalado em sua máquina.
-2. Clone este repositório:
-   ```sh
-   git clone https://github.com/seuusuario/JogoRPG.git
-   ```
-3. Compile o projeto:
-   ```sh
-   javac -d bin src/*.java
-   ```
-4. Execute o jogo:
-   ```sh
-   java -cp bin Main
-   ```
-
-## Estrutura do Projeto
-```
-JogoRPG/
-├── src/              # Código-fonte do jogo
-│   ├── Personagens/  # Classes dos personagens
-│   ├── Viloes/       # Classes dos viloes
-│   ├── Main.java     # Função principal
-│   ├── GameUI.java   # UI do jogo (futuro aprimoramento)
-│   ├── BattleUI.java # UI de batalha (futuro aprimoramento)
-├── README.md         # Documentação do projeto
-```
-
 ## Contribuição
 Sinta-se à vontade para contribuir com melhorias, reportar bugs ou sugerir novas funcionalidades.
