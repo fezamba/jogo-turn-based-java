@@ -1,4 +1,4 @@
-# Jogo RPG - Turn-Based RPG em Java
+# Jogo - Turn-Based RPG em Java
 
 Este é um jogo de RPG baseado em turnos desenvolvido em Java, inspirado em mecânicas de batalhas de jogos como Pokémon. O jogador escolhe um dos quatro heróis disponíveis e enfrenta uma série de batalhas contra inimigos poderosos para restaurar o equilíbrio do reino de Eryndor.
 
