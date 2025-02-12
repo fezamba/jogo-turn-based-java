@@ -1,3 +1,5 @@
+package Principal;
+
 import javax.swing.*;
 import java.awt.*;
 import Personagens.*;
@@ -50,7 +52,7 @@ class BattleUI {
     private void atacar() {
         int dano = jogador.getAtk();
         inimigos.get(bossAtual).receberDano(dano);
-        textArea.append("\nVocê atacou " + inimigos.get(bossAtual).getNome() + " causando " + dano + " de dano!");
+        textArea.append("Você atacou " + inimigos.get(bossAtual).getNome() + " causando " + dano + " de dano!");
         turnoInimigo();
         atualizarStatus();
     }

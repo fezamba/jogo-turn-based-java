@@ -1,3 +1,5 @@
+package Principal;
+
 import Personagens.*;
 import Viloes.*;
 import java.util.*;
