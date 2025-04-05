@@ -8,7 +8,7 @@ Este é um jogo de RPG baseado em turnos desenvolvido em Java, inspirado em mec�
 - Ataques e habilidades especiais exclusivos para cada personagem.
 - Inventário de itens, incluindo poções com efeitos variados.
 - Sistema de buffs após derrotar chefes.
-- Interface gráfica utilizando Java Swing (futuro aprimoramento).
+- Interface gráfica utilizando Java Swing (em desenvolvimento).
 
 ## Contribuição
 Sinta-se à vontade para contribuir com melhorias, reportar bugs ou sugerir novas funcionalidades.
